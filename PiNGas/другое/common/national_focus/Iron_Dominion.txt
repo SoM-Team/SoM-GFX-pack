@@ -1,0 +1,606 @@
+focus_tree = {
+	id = Iron_Dominion
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRO
+		}
+	}
+	default = no
+	focus = {
+		id = IRO_One_Player
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = IRO_State_Formatting
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_One_Player
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = IRO_Disk_Cleanup
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_State_Formatting
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = IRO_Delete_Outdated
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Disk_Cleanup
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = IRO_Recycle_Empty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Delete_Outdated
+		}
+		mutually_exclusive = {
+			focus = IRO_Recycle
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Recycle
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Delete_Outdated
+		}
+		mutually_exclusive = {
+			focus = IRO_Recycle_Empty
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = IRO_System_Upgrade
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_State_Formatting
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = IRO_Cybernetics_Hegemony
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_System_Upgrade
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = IRO_Only_Machine
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cybernetics_Hegemony
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Eggman_Kind
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Only_Machine
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Scientific_Coop
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Eggman_Kind
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = IRO_Cyber_Religion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cybernetics_Hegemony
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Factory_Home
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cyber_Religion
+			focus = IRO_Only_Machine
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = IRO_People_Labor
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Factory_Home
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = IRO_Development_Core
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_People_Labor
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Synthetic_Dawn
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cyber_Religion
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Goddes_Machinery
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Synthetic_Dawn
+		}
+		mutually_exclusive = {
+			focus = IRO_No_Old
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = IRO_Deification_Tech
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Goddes_Machinery
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Priest_Tech
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Goddes_Machinery
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Mech_Bible
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Priest_Tech
+		}
+		prerequisite = {
+			focus = IRO_Deification_Tech
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = IRO_Will_Of_God
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Mech_Bible
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = IRO_No_Old
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Synthetic_Dawn
+		}
+		mutually_exclusive = {
+			focus = IRO_Goddes_Machinery
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = IRO_Sci_Council
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_No_Old
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Anti_Virus
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_State_Formatting
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = IRO_Arrest_Suspected
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Anti_Virus
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = IRO_Personal_space
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Arrest_Suspected
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = IRO_AI_Advisor
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_No_Old
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Nest_Society
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_AI_Advisor
+		}
+		prerequisite = {
+			focus = IRO_Sci_Council
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = IRO_Everything_Plan
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Nest_Society
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = IRO_Kingdom_Surv
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Anti_Virus
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = IRO_Everyone_System
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Kingdom_Surv
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Sandbox_Country
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Everyone_System
+		}
+		prerequisite = {
+			focus = IRO_Personal_space
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Deus_Ex
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_State_Formatting
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = IRO_Flesh_Weak
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Deus_Ex
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = IRO_Man_Organ
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Flesh_Weak
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Cyber_Limbs
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Flesh_Weak
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Made_Work
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cyber_Limbs
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Bonus_Penalty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Man_Organ
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Change_Mind
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Deus_Ex
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = IRO_CPU
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Change_Mind
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Censor
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_CPU
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Local_Area_Net
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Eggman_Kind
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = IRO_Learn_Adv
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Scientific_Coop
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = IRO_World_Our
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Learn_Adv
+		}
+		prerequisite = {
+			focus = IRO_Local_Area_Net
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = IRO_Flee_Firewall
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_World_Our
+		}
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = IRO_Your_Army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Flee_Firewall
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = IRO_Total_Crash
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Flee_Firewall
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = IRO_Broken_Egg
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Total_Crash
+		}
+		prerequisite = {
+			focus = IRO_Your_Army
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = IRO_Legionization
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Change_Mind
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = IRO_Cyber_Welfare
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Legionization
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = IRO_Man_Machine
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = IRO_Cyber_Welfare
+		}
+		prerequisite = {
+			focus = IRO_Censor
+		}
+		prerequisite = {
+			focus = IRO_Made_Work
+		}
+		prerequisite = {
+			focus = IRO_Bonus_Penalty
+		}
+		x = 22
+		y = 6
+
+	}
+}
